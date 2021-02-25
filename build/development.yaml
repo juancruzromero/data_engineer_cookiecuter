@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  api:
+    container_name: app
+    build: "build/dev"
+      context: .
+      dockerfile: ./build/development.Dockerfile   
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/todos
+      - APP_PORT=5000
+    depends_on:
+      - mongo
+    volumes:
+      - .:/api
+    ports: 
+      - "5000:5000"
+
+  mongo:
+    container_name: mongo-db
+    image: mongo
+    volumes:
+      - "./db:/data/db"

@@ -1,0 +1,13 @@
+# Editors / IDS
+.vs
+.vscode
+.idea
+
+# Compilations
+__pycache__
+*.pyc
+
+# Virtual Enviroments.
+env
+.env
+.venv

@@ -1,0 +1,7 @@
+*.log
+.dockerignore
+.git
+.gitignore
+build/*
+requirements
+README.md

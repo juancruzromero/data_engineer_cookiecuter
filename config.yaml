@@ -1,0 +1,12 @@
+# postgresql:
+#   develope:
+#     host: localhost
+#   production:
+#     host: localhost
+mongo:
+  host: 'mongodb://localhost:27017/'
+  db: 'tests'
+  collection: 'theTest'
+sites:
+  mi_site:
+    url: 'https://docs.github.com/'
